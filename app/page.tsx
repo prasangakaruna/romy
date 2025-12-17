@@ -1,40 +1,15 @@
 import TopBar from "./components/TopBar";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 export default function Home() {
-  const logoUrl = "/logo.webp";
-  
   return (
     <div className="min-h-screen bg-[var(--color-bg-white)]">
       {/* Top Bar */}
       <TopBar />
       
       {/* Header */}
-      <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-[var(--color-border-light)]">
-        <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
-          <a href="/" className="flex items-center">
-            <img src={logoUrl} alt="Roomy Domy" className="h-10 w-auto" />
-          </a>
-          <div className="hidden items-center gap-8 md:flex">
-            {["Benefits", "How It Works", "Locations", "Pricing", "FAQ"].map((item) => (
-              <a
-                key={item}
-                href={item === "Benefits" ? "/benefits" : `#${item.toLowerCase().replace(/\s+/g, "-")}`}
-                className="relative text-sm font-medium text-[var(--color-text-secondary)] transition-colors hover:text-[var(--color-primary)] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[var(--color-primary)] after:transition-all hover:after:w-full"
-              >
-                {item}
-              </a>
-            ))}
-          </div>
-          <div className="flex items-center gap-3">
-            <a href="/get-quote" className="rounded-full border-2 border-[var(--color-primary)] px-5 py-2 text-sm font-semibold text-[var(--color-primary)] transition-all hover:bg-[var(--color-primary)] hover:text-white">
-              Get a Quote
-            </a>
-            <button className="rounded-full bg-gradient-to-r from-[var(--color-primary)] to-emerald-500 px-6 py-2.5 text-sm font-semibold text-white shadow-lg shadow-emerald-200 transition-all hover:shadow-xl hover:shadow-emerald-300 hover:-translate-y-0.5">
-              Contact Us
-            </button>
-          </div>
-        </nav>
-      </header>
+      <Header />
 
       {/* Hero Section */}
       <section className="relative mx-auto max-w-7xl px-6 py-12 lg:px-8 lg:py-20">
@@ -341,51 +316,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-slate-900 text-slate-400">
-        <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
-          <div className="grid grid-cols-2 gap-8 lg:grid-cols-5">
-            <div className="col-span-2">
-              <a href="/" className="flex items-center">
-                <img src={logoUrl} alt="Roomy Domy" className="h-12 w-auto brightness-0 invert" />
-              </a>
-              <p className="mt-4 max-w-xs text-sm leading-6">
-                Your self-sustaining sanctuary awaits. Experience luxury living in harmony with nature.
-              </p>
-              <div className="mt-6 flex gap-4">
-                {["X", "Instagram", "Facebook"].map((social) => (
-                  <a key={social} href="#" className="rounded-full bg-slate-800 p-2.5 transition-colors hover:bg-emerald-600">
-                    <span className="sr-only">{social}</span>
-                    <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84" />
-                    </svg>
-                  </a>
-                ))}
-              </div>
-            </div>
-            {[
-              { title: "Company", links: ["About Us", "Careers", "Press"] },
-              { title: "Product", links: ["Features", "Locations", "Pricing"] },
-              { title: "Legal", links: ["Privacy", "Terms", "Contact"] },
-            ].map((col) => (
-              <div key={col.title}>
-                <h3 className="text-sm font-semibold text-white">{col.title}</h3>
-                <ul className="mt-4 space-y-3">
-                  {col.links.map((link) => (
-                    <li key={link}>
-                      <a href="#" className="text-sm transition-colors hover:text-emerald-400">
-                        {link}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-          <div className="mt-12 flex flex-col items-center justify-between border-t border-slate-800 pt-8 sm:flex-row">
-            <p className="text-sm">© 2024 Roomy Domy. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

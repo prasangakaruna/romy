@@ -1,50 +1,15 @@
 import TopBar from "../components/TopBar";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 export default function Benefits() {
-  const logoUrl = "/logo.webp";
-
   return (
     <div className="min-h-screen bg-[#f5f5f0]">
       {/* Top Bar */}
       <TopBar />
       
       {/* Header */}
-      <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
-        <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
-          <a href="/" className="flex items-center">
-            <img src={logoUrl} alt="Roomy Domy" className="h-8 w-auto" />
-          </a>
-          <div className="hidden items-center gap-8 md:flex">
-            {[
-              { name: "Home", href: "/" },
-              { name: "The Domes", href: "#" },
-              { name: "Process", href: "#" },
-              { name: "Benefits", href: "/benefits", active: true },
-              { name: "Contact", href: "#" },
-            ].map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className={`text-sm font-medium transition-colors ${
-                  item.active
-                    ? "text-emerald-500"
-                    : "text-slate-700 hover:text-emerald-500"
-                }`}
-              >
-                {item.name}
-              </a>
-            ))}
-          </div>
-          <div className="flex items-center gap-3">
-            <a href="/get-quote" className="rounded-full border-2 border-emerald-500 px-5 py-2 text-sm font-semibold text-emerald-600 transition-all hover:bg-emerald-500 hover:text-white">
-              Get a Quote
-            </a>
-            <button className="rounded-full bg-emerald-500 px-5 py-2 text-sm font-medium text-white transition-all hover:bg-emerald-600">
-              Request a Consultation
-            </button>
-          </div>
-        </nav>
-      </header>
+      <Header activeNav="Benefits" />
 
       {/* Hero Section */}
       <section className="mx-auto max-w-7xl px-6 py-12 lg:px-8">
@@ -251,24 +216,7 @@ export default function Benefits() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-slate-200 bg-white">
-        <div className="mx-auto max-w-7xl px-6 py-8 lg:px-8">
-          <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
-            <div className="flex items-center gap-2">
-              <img src={logoUrl} alt="Roomy Domy" className="h-6 w-auto" />
-              <span className="text-sm text-slate-500">© 2024 Roomy Domy. All rights reserved.</span>
-            </div>
-            <div className="flex gap-6">
-              <a href="#" className="text-sm text-slate-500 hover:text-emerald-500 transition-colors">
-                Privacy Policy
-              </a>
-              <a href="#" className="text-sm text-slate-500 hover:text-emerald-500 transition-colors">
-                Terms of Service
-              </a>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

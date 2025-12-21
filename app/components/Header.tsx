@@ -12,12 +12,14 @@ export default function Header({ activeNav }: HeaderProps) {
     { name: "How It Works", href: "/#how-it-works" },
     { name: "Locations", href: "/#locations" },
     { name: "Pricing", href: "/#pricing" },
+    { name: "Calculator", href: "/calculator" },
+    { name: "Builders", href: "/builders" },
     { name: "FAQ", href: "/#faq" },
   ];
 
   return (
     <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-[var(--color-border-light)]">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
+      <nav className="mx-auto flex max-w-[1600px] items-center justify-between px-6 py-4 lg:px-8">
         <a href="/" className="flex items-center">
           <img src={logoUrl} alt="Roomy Domy" className="h-10 w-auto" />
         </a>
@@ -51,4 +53,5 @@ export default function Header({ activeNav }: HeaderProps) {
     </header>
   );
 }
+
 

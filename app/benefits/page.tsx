@@ -12,7 +12,7 @@ export default function Benefits() {
       <Header activeNav="Benefits" />
 
       {/* Hero Section */}
-      <section className="mx-auto max-w-7xl px-6 py-12 lg:px-8">
+      <section className="mx-auto max-w-[1600px] px-6 py-12 lg:px-8">
         <div className="relative overflow-hidden rounded-3xl bg-slate-800 min-h-[400px]">
           <div
             className="absolute inset-0"
@@ -38,7 +38,7 @@ export default function Benefits() {
       </section>
 
       {/* 10 Core Benefits */}
-      <section className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+      <section className="mx-auto max-w-[1600px] px-6 py-16 lg:px-8">
         <h2 className="text-center text-3xl font-bold text-slate-900 mb-12">
           At a Glance: 10 Core Benefits
         </h2>
@@ -154,7 +154,7 @@ export default function Benefits() {
       </section>
 
       {/* Investment & Lifestyle Section */}
-      <section className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+      <section className="mx-auto max-w-[1600px] px-6 py-16 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">
             A Powerful Investment & A Dream Lifestyle
@@ -201,7 +201,7 @@ export default function Benefits() {
       </section>
 
       {/* CTA Section */}
-      <section className="mx-auto max-w-7xl px-6 py-12 lg:px-8">
+      <section className="mx-auto max-w-[1600px] px-6 py-12 lg:px-8">
         <div className="rounded-3xl bg-gradient-to-r from-emerald-400 to-teal-500 px-8 py-16 text-center">
           <h2 className="text-2xl font-bold text-white sm:text-3xl">
             Ready to Build Your Legacy?

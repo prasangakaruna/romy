@@ -12,7 +12,7 @@ export default function Home() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative mx-auto max-w-7xl px-6 py-12 lg:px-8 lg:py-20">
+      <section className="relative mx-auto max-w-[1600px] px-6 py-12 lg:px-8 lg:py-20">
         <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-slate-900 via-slate-800 to-emerald-900 shadow-2xl">
           {/* Background Image Overlay */}
           <div 
@@ -78,7 +78,7 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
+      <section className="mx-auto max-w-[1600px] px-6 py-24 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <span className="inline-block rounded-full bg-emerald-100 px-4 py-1.5 text-sm font-semibold text-emerald-700">
             Why Choose Us
@@ -165,7 +165,7 @@ export default function Home() {
           backgroundImage: `radial-gradient(circle at 1px 1px, rgb(148 163 184 / 0.3) 1px, transparent 0)`,
           backgroundSize: "40px 40px",
         }} />
-        <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="relative mx-auto max-w-[1600px] px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <span className="inline-block rounded-full bg-emerald-100 px-4 py-1.5 text-sm font-semibold text-emerald-700">
               Simple Process
@@ -232,7 +232,7 @@ export default function Home() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
+      <section className="mx-auto max-w-[1600px] px-6 py-24 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <span className="inline-block rounded-full bg-emerald-100 px-4 py-1.5 text-sm font-semibold text-emerald-700">
             Testimonials
@@ -292,7 +292,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="mx-auto max-w-7xl px-6 py-12 lg:px-8">
+      <section className="mx-auto max-w-[1600px] px-6 py-12 lg:px-8">
         <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-emerald-600 via-teal-600 to-cyan-700 px-8 py-16 shadow-2xl sm:px-16 lg:py-24">
           <div className="absolute top-0 right-0 h-96 w-96 rounded-full bg-white/10 blur-3xl" />
           <div className="absolute bottom-0 left-0 h-72 w-72 rounded-full bg-emerald-400/20 blur-3xl" />

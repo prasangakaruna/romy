@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import TopBar from "../components/TopBar";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -71,7 +72,7 @@ export default function GetQuote() {
       {/* Header */}
       <Header />
 
-      <main className="flex-1 mx-auto max-w-7xl px-6 py-8 lg:px-8 w-full">
+      <main className="flex-1 mx-auto max-w-[1600px] px-6 py-8 lg:px-8 w-full">
         {/* Hero Banner */}
         <div className="relative overflow-hidden rounded-2xl mb-8">
           <div
@@ -173,12 +174,12 @@ export default function GetQuote() {
 
         {/* Next Button */}
         <div className="flex justify-end mb-8">
-          <button
-            onClick={() => setCurrentStep(2)}
-            className="rounded-full bg-emerald-500 px-8 py-3 text-sm font-semibold text-white transition-all hover:bg-emerald-600 shadow-lg shadow-emerald-200"
+          <Link
+            href="/customize"
+            className="rounded-full bg-emerald-500 px-8 py-3 text-sm font-semibold text-white transition-all hover:bg-emerald-600 shadow-lg shadow-emerald-200 inline-block"
           >
             Next: Customize
-          </button>
+          </Link>
         </div>
       </main>
 

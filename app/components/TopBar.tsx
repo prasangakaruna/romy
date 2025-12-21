@@ -28,7 +28,7 @@ export default function TopBar() {
 
   return (
     <div className="bg-[var(--color-bg-light)] border-b border-[var(--color-border-light)] py-2">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8 flex items-center justify-between">
+      <div className="mx-auto max-w-[1600px] px-6 lg:px-8 flex items-center justify-between">
         <p className="text-sm text-[var(--color-text-secondary)]">
           We build your dream home 🏠
         </p>

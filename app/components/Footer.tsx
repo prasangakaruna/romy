@@ -3,7 +3,7 @@ const logoUrl = "/logo.webp";
 export default function Footer() {
   return (
     <footer className="bg-slate-900 text-slate-400">
-      <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+      <div className="mx-auto max-w-[1600px] px-6 py-16 lg:px-8">
         <div className="grid grid-cols-2 gap-8 lg:grid-cols-5">
           <div className="col-span-2">
             <a href="/" className="flex items-center">
@@ -53,4 +53,5 @@ export default function Footer() {
     </footer>
   );
 }
+
 

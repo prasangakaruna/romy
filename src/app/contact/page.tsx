@@ -71,13 +71,13 @@ export default function ContactPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8 text-center">
           <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-sm text-emerald-300 backdrop-blur-sm">
             <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
-            We're here to help
+            We&apos;re here to help
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
             Get in <span className="bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400 bg-clip-text text-transparent">Touch</span>
           </h1>
           <p className="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto">
-            Have questions about our eco-domes? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+            Have questions about our eco-domes? We&apos;d love to hear from you. Send us a message and we&apos;ll respond as soon as possible.
           </p>
         </div>
       </section>

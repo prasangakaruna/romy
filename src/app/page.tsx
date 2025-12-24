@@ -2576,7 +2576,7 @@ export default function Home() {
               </svg>
             </span>
             <h3 className="font-bold text-lg text-gray-900">Passive Income</h3>
-            <p className="text-gray-600 text-sm">Earn up to $50k/yr renting your dome when you're away, fully managed hassle-free.</p>
+            <p className="text-gray-600 text-sm">Earn up to $50k/yr renting your dome when you&apos;re away, fully managed hassle-free.</p>
           </div>
           {/* Card 2 */}
           <div className="bg-white rounded-xl shadow-md p-6 flex flex-col items-center text-center gap-3 border border-gray-100 hover:shadow-lg transition-all duration-200">
